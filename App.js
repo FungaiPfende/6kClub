@@ -1,10 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import { useFonts } from "expo-font";
 
 export default function App() {
+  const [loaded] = useFonts({
+    AvenirLight: require("./assets/fonts/AvenirLTProLight.otf"),
+    AvenirBook: require("./assets/fonts/AvenirLTProBook.otf"),
+    AvenirMedium: require("./assets/fonts/AvenirLTProMedium.otf"),
+    AvenirHeavy: require("./assets/fonts/AvenirLTProHeavy.otf"),
+  });
+  if (!loaded) {
+    return null;
+  }
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={styles.text}>
+        Open up App.js to start working on your app!
+      </Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +26,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#FFFFFF",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });

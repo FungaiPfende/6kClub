@@ -22,7 +22,7 @@ export const colours = {
     primary: "#262626",
     secondary: "#757575",
     disabled: "#9C9C9C",
-    inverse: "#FFFFFF",
+    white: "#FFFFFF",
     error: "#FF4646",
     success: "#00B73F",
   },

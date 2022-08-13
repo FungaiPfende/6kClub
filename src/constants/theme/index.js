@@ -3,7 +3,7 @@ import { fonts, fontWeights, fontSizes } from "./fonts";
 import { shadows } from "./shadows";
 import { colours } from "./colours";
 import { sizes } from "./sizes";
-import { spacing } from "./spacing";
+import { space } from "./spacing";
 
 export {
   assets,
@@ -13,5 +13,5 @@ export {
   shadows,
   colours,
   sizes,
-  spacing,
+  space,
 };
