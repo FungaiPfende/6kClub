@@ -1,6 +1,6 @@
 import { StyleSheet, View, Image, Text } from "react-native";
 import React from "react";
-import LinearGradient from "react-native-linear-gradient";
+import { LinearGradient } from "expo-linear-gradient";
 
 import {
   assets,
@@ -18,12 +18,16 @@ export const WebinarCard = () => {
   return (
     <View style={styles.card}>
       <View style={styles.cardCover}>
-        <Image
-          source={assets.webinar}
-          resizeMode="cover"
-          style={styles.cardImage}
-        />
-        <Text style={styles.webinarTitle}>6k.creatives{"\n"}live webinar</Text>
+        <LinearGradient colors={["transparent", "black"]} style={{ zIndex: 1 }}>
+          <Image
+            source={assets.webinar}
+            resizeMode="cover"
+            style={styles.cardImage}
+          />
+          <Text style={styles.webinarTitle}>
+            6k.creatives{"\n"}live webinar
+          </Text>
+        </LinearGradient>
       </View>
 
       <View style={styles.info}>
@@ -37,7 +41,6 @@ export const WebinarCard = () => {
             radius={sizes.lg}
           />
         </View>
-
         <View style={styles.divider} />
 
         <View style={styles.upcomingWebinars}>
@@ -86,6 +89,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.bold,
     fontSize: fontSizes.h4,
     marginHorizontal: space.lg,
+    ...shadows.dark,
   },
 
   info: {
