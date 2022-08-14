@@ -4,7 +4,7 @@
     "slug": "6kClub",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/sixKC_app_icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/sixKC_splash.png",
@@ -14,9 +14,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
