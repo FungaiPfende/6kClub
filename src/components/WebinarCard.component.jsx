@@ -63,7 +63,6 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: colours.bg.primary,
     borderRadius: sizes.lg,
-    marginHorizontal: space.lg,
     marginVertical: space.xl + 10,
     ...shadows.light,
   },
