@@ -10,6 +10,7 @@ export const shadows = {
 
     elevation: 3,
   },
+
   medium: {
     shadowColor: "#000",
     shadowOffset: {
@@ -21,6 +22,7 @@ export const shadows = {
 
     elevation: 7,
   },
+
   dark: {
     shadowColor: "#000",
     shadowOffset: {
