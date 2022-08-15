@@ -6,6 +6,7 @@ import { space } from "../constants/theme";
 import { Header } from "../components/Header.component.jsx";
 import { WebinarCard } from "../components/WebinarCard.component.jsx";
 import { TopStudents } from "../components/TopStudents.component.jsx";
+import { Stories } from "../components/Stories.component.jsx";
 
 export const Home = () => {
   return (
@@ -14,6 +15,7 @@ export const Home = () => {
         <Header />
         <WebinarCard />
         <TopStudents />
+        <Stories />
       </ScrollView>
     </SafeAreaView>
   );
