@@ -31,6 +31,33 @@ export const TopStudents = () => {
       name: "Sarah",
       image: assets.student04,
     },
+
+    // Dummy data
+    // {
+    //   id: "05",
+    //   name: "Munashe",
+    //   image: assets.userProfile,
+    // },
+    // {
+    //   id: "01",
+    //   name: "Liarah",
+    //   image: assets.student01,
+    // },
+    // {
+    //   id: "02",
+    //   name: "Cateline",
+    //   image: assets.student02,
+    // },
+    // {
+    //   id: "03",
+    //   name: "Marcus",
+    //   image: assets.student03,
+    // },
+    // {
+    //   id: "04",
+    //   name: "Sarah",
+    //   image: assets.student04,
+    // },
     // {
     //   id: "05",
     //   name: "Munashe",
@@ -39,8 +66,8 @@ export const TopStudents = () => {
   ];
 
   return (
-    <View>
-      <Text style={styles.title}>Top design students</Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>Top Design Students</Text>
 
       <View style={styles.studentsView}>
         <ScrollView
@@ -55,7 +82,7 @@ export const TopStudents = () => {
                 resizeMode="contain"
                 style={styles.studentImages}
               />
-              <Text key={student.i} style={styles.studentsText}>
+              <Text key={i} style={styles.studentsText}>
                 {student.name}
               </Text>
             </View>
@@ -67,13 +94,19 @@ export const TopStudents = () => {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    // flex: 1,
+  },
+
   title: {
     fontFamily: fonts.bold,
     fontSize: fontSizes.h5,
     marginBottom: space.lg,
   },
 
-  studentsView: {},
+  studentsView: {
+    flex: 1,
+  },
 
   studentsScroll: {
     flex: 1,
@@ -84,6 +117,7 @@ const styles = StyleSheet.create({
   students: {
     flexDirection: "column",
     alignItems: "center",
+    paddingRight: space.lg,
   },
 
   studentsText: {
