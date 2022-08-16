@@ -10,7 +10,7 @@ import {
   space,
 } from "../constants/theme";
 
-export const Header = () => {
+export const Header = ({ title }) => {
   return (
     <View style={styles.container}>
       <Image
@@ -21,7 +21,7 @@ export const Header = () => {
 
       <View styles={styles.midSection}>
         <View style={styles.textContainer}>
-          <Text style={styles.headerText}>Home</Text>
+          <Text style={styles.headerText}>{title}</Text>
         </View>
 
         <View style={styles.dot} />

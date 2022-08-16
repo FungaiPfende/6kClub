@@ -8,11 +8,11 @@ import { WebinarCard } from "../components/WebinarCard.component.jsx";
 import { TopStudents } from "../components/TopStudents.component.jsx";
 import { Stories } from "../components/Stories.component.jsx";
 
-export const Home = () => {
+export const Home = ({ route }) => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <Header />
+        <Header title={route.name} />
         <WebinarCard />
         <TopStudents />
         <Stories />
