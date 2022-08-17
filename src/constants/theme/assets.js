@@ -11,6 +11,8 @@ import student04 from "../../../assets/images/student04.jpg";
 import userProfile from "../../../assets/images/userProfile.jpg";
 import webinar from "../../../assets/images/webinar.jpg";
 
+const video = "https://www.youtube.com/watch?v=NscXXbmAggI";
+
 export default {
   sixKC_logo,
   story01,
@@ -21,4 +23,5 @@ export default {
   student04,
   userProfile,
   webinar,
+  video,
 };

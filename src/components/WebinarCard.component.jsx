@@ -1,6 +1,7 @@
 import { StyleSheet, View, Image, Text } from "react-native";
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
+import { Video } from "expo-av";
 
 import {
   assets,
@@ -19,6 +20,15 @@ export const WebinarCard = () => {
     <View style={styles.card}>
       <View style={styles.cardCover}>
         <LinearGradient colors={["transparent", "black"]} style={{ zIndex: 1 }}>
+          {/* <Video
+            source={{ uri: "https://www.youtube.com/watch?v=NscXXbmAggI" }}
+            usePoster={true}
+            posterSource={{ uri: assets.webinar }}
+            resizeMode="cover"
+            shouldPlay={true}
+            useNativeControls={true}
+            style={styles.cardImage}
+          /> */}
           <Image
             source={assets.webinar}
             resizeMode="cover"
