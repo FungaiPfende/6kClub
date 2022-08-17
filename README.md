@@ -5,5 +5,3 @@
   - Figure out how to combine those 2 types of navigation together.
     - [Resource 1](https://reactnavigation.org/docs/tab-based-navigation/#a-stack-navigator-for-each-tab)
     - [Resource 2](https://reactnavigation.org/docs/nesting-navigators/)
-
-3. Use [`expo-av`](https://docs.expo.dev/versions/latest/sdk/video/#usage) to display a video for the live webinar component.
