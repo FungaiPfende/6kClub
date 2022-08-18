@@ -9,8 +9,11 @@ import {
   sizes,
   space,
 } from "../constants/theme";
+import { useNavigation } from "@react-navigation/native";
 
-export const Header = ({ title, navigation }) => {
+export const Header = ({ title }) => {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <Image
