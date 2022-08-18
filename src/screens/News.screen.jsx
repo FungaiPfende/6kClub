@@ -3,9 +3,9 @@ import { space } from "../constants/theme";
 
 import { Header } from "../components/Header.component";
 
-export const News = ({ route }) => (
+export const News = ({ navigation }) => (
   <SafeAreaView style={styles.screen}>
-    <Header title={route.name} />
+    <Header title="News" navigation={navigation} />
     <Text>News Screen</Text>
   </SafeAreaView>
 );

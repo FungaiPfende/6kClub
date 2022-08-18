@@ -3,9 +3,9 @@ import { space } from "../constants/theme";
 
 import { Header } from "../components/Header.component";
 
-export const Library = ({ route }) => (
+export const Library = ({ navigation }) => (
   <SafeAreaView style={styles.screen}>
-    <Header title={route.name} />
+    <Header title="Library" navigation={navigation} />
     <Text>Library Screen</Text>
   </SafeAreaView>
 );
