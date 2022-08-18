@@ -12,7 +12,7 @@ export const colours = {
     primary: "#262626",
     secondary: "#757575",
     tertiary: "#F1F1F1",
-    quaternary: "#FFFFFF",
+    white: "#FFFFFF",
     black: "#000000",
     disabled: "#DEDEDE",
     error: "#FF4646",
