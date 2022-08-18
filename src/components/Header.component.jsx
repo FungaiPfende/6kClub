@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Pressable } from "react-native";
 import React from "react";
 
 import {
@@ -10,7 +10,7 @@ import {
   space,
 } from "../constants/theme";
 
-export const Header = ({ title }) => {
+export const Header = ({ title, navigation }) => {
   return (
     <View style={styles.container}>
       <Image
@@ -27,11 +27,13 @@ export const Header = ({ title }) => {
         <View style={styles.dot} />
       </View>
 
-      <Image
-        source={assets.userProfile}
-        resizeMode="contain"
-        style={styles.profile}
-      />
+      <Pressable onPress={() => navigation.navigate("Profile")}>
+        <Image
+          source={assets.userProfile}
+          resizeMode="contain"
+          style={styles.profile}
+        />
+      </Pressable>
     </View>
   );
 };
