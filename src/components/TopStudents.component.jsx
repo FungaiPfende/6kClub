@@ -41,7 +41,6 @@ export const TopStudents = () => {
         <ScrollView
           horizontal={true}
           contentContainerStyle={styles.studentsScroll}
-          pagingEnabled={true}
         >
           {students.map((student, i) => (
             <View style={styles.students}>
