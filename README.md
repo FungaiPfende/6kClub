@@ -3,16 +3,14 @@
 1. Fix the Stories image bug. ✅
 
 2. Set up bottom tabs and stack navigation. ✅
-
-- Figure out how to combine those 2 types of navigation together.
-  - [Resource 1](https://reactnavigation.org/docs/tab-based-navigation/#a-stack-navigator-for-each-tab)
-  - [Resource 2](https://reactnavigation.org/docs/nesting-navigators/)
+  - Figure out how to combine those 2 types of navigation together.
+    - [Resource 1](https://reactnavigation.org/docs/tab-based-navigation/#a-stack-navigator-for-each-tab)
+    - [Resource 2](https://reactnavigation.org/docs/nesting-navigators/)
 
 3. Use [`expo-av`](https://docs.expo.dev/versions/latest/sdk/video/#usage) to display a video for the live webinar component. ❌
 
 4. Develop the `Profile` screen from the sketch that I drew.
-
-- Use the [JSON Placeholder API](https://jsonplaceholder.typicode.com/) to render the `ProjectsList` component and `ProjectDetails` screen.
+  - Use the [JSON Placeholder API](https://jsonplaceholder.typicode.com/) to render the `ProjectsList` component and `ProjectDetails` screen.
 
 # Learning Journey
 
