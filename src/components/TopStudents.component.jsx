@@ -31,38 +31,6 @@ export const TopStudents = () => {
       name: "Sarah",
       image: assets.student04,
     },
-
-    // Dummy data
-    // {
-    //   id: "05",
-    //   name: "Munashe",
-    //   image: assets.userProfile,
-    // },
-    // {
-    //   id: "01",
-    //   name: "Liarah",
-    //   image: assets.student01,
-    // },
-    // {
-    //   id: "02",
-    //   name: "Cateline",
-    //   image: assets.student02,
-    // },
-    // {
-    //   id: "03",
-    //   name: "Marcus",
-    //   image: assets.student03,
-    // },
-    // {
-    //   id: "04",
-    //   name: "Sarah",
-    //   image: assets.student04,
-    // },
-    // {
-    //   id: "05",
-    //   name: "Munashe",
-    //   image: assets.userProfile,
-    // },
   ];
 
   return (
@@ -73,6 +41,7 @@ export const TopStudents = () => {
         <ScrollView
           horizontal={true}
           contentContainerStyle={styles.studentsScroll}
+          pagingEnabled={true}
         >
           {students.map((student, i) => (
             <View style={styles.students}>
